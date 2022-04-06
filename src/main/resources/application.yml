@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 1800
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates
+    suffix: .html
+  session:
+    store-type: redis
+    redis:
+      namespace: MYSESSION
+  redis:
+    host: 172.22.0.11
+    port: 6379
+    database: 3
+    timeout: 5000
